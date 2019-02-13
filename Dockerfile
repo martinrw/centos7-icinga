@@ -5,6 +5,7 @@ MAINTAINER Martin Wyett
 RUN yum install -y wget \
         && yum install -y epel-release \
         && yum install -y python34-pip \
+        && yum install python34-devel \
         && yum install -y mysql-devel \
         && yum install -y redhat-rpm-config \
         && yum install -y gcc \

@@ -9,9 +9,11 @@ RUN yum install -y wget \
         && yum install -y redhat-rpm-config \
         && yum install -y gcc \
         && yum install - y MySQL-python3 \
+        && yum install -y python3-mysql
         && pip3 install requests \
         && pip3 install validators \
-        && pip3 install mysql-connector-python
+        && pip3 install mysql-connector-python \
+        && pip3 install mysqlclient
 
 RUN rpm --import http://packages.icinga.org/icinga.key \
         && wget --no-check-certificate https://packages.icinga.org/epel/7/release/noarch/icinga-rpm-release-7-1.el7.centos.noarch.rpm \

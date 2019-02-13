@@ -9,7 +9,6 @@ RUN yum install -y wget \
         && yum install -y redhat-rpm-config \
         && yum install -y gcc \
         && yum install - y MySQL-python3 \
-        && yum install -y python3-mysql \
         && pip3 install requests \
         && pip3 install validators \
         && pip3 install mysql-connector-python \

@@ -11,6 +11,7 @@ RUN yum install -y wget \
         && yum install -y gcc \
         && yum install -y python34-PyMySQL \
         && yum install -y python34-mysql \
+        && yum install -y git \
         && pip3 install requests \
         && pip3 install validators \
         && pip3 install mysql-connector-python \
